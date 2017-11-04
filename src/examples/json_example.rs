@@ -7,6 +7,7 @@ use std::io::Read;
 use std::vec::Vec;
 use std::env::args;
 use std::io::Error;
+use utils::io::read_content_of_file_to_string;
 
 use serde::de::{Deserialize, DeserializeOwned};
 use serde_yaml::from_str as yaml_from_str;
@@ -26,11 +27,6 @@ pub fn run(filepath: String) {
         }
         println!();
     });
-}
-
-pub fn read_content_of_file_to_string<'a>(filepath: &'a str, buffer: &mut String) -> Result<usize, Error> {
-    let mut file = File::open(filepath).unwrap();
-    file.read_to_string(buffer)
 }
 
 #[derive(Deserialize, Serialize)]
