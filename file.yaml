@@ -1,0 +1,8 @@
+persons:
+  - shach:
+    - fullname: Shacham Ginat
+    - age: 20
+
+  - oren:
+    - fullname: Oren Urbach
+    - age: 6
