@@ -6,4 +6,5 @@ authors = ["shach <shacham6@gmail.com>"]
 [dependencies]
 serde = "*"
 serde_json = "*"
+serde_yaml = "*"
 serde_derive = "*"
